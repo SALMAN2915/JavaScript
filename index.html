@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>p</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+   
+  <input id="name" type="text" placeholder="Enter your name" />
+
+ <input id="dob" type="date" />
+
+
+  <button onclick="submit()">Submit</button>
+
+   <p id="output"></p>
+
+  <script>
+    function submit() {
+      var name = document.getElementById("name").value;     
+      var dob = document.getElementById("dob").value;
+    //   alert("hello " + name + ", Date: " + dob );
+    document.getElementById("output").innerHTML = "hello " + name + ", Date: " + dob;
+    } 
+  </script>
+</body>
+</html>
+
